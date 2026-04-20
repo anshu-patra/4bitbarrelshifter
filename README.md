@@ -256,6 +256,6 @@ The schematic shows 8 `SDFFRHQX1` scan flip-flops stitched serially from `scan_i
 
 ## Author
 
-**Harshit** | IIIT Kurnool 
+**Anshu Patra** | IIIT Kurnool 
 
 VLSI Design — DFT & ATPG  | April 2026
