@@ -1,0 +1,25 @@
+VERSION 5.5 ;
+NAMESCASESENSITIVE ON ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN barrel_shifter_4bit ;
+
+SCANCHAINS 1 ;
+  - chain1_seg1_clk_test_rising 
+    + PARTITION p_clk_test_rising 
+      MAXBITS 8
+    + START PIN scan_in
+    + FLOATING 
+       data_out_reg[0] ( IN SI ) ( OUT Q ) 
+       data_out_reg[1] ( IN SI ) ( OUT Q ) 
+       data_out_reg[2] ( IN SI ) ( OUT Q ) 
+       data_out_reg[3] ( IN SI ) ( OUT Q ) 
+       stage1_reg[0] ( IN SI ) ( OUT Q ) 
+       stage1_reg[1] ( IN SI ) ( OUT Q ) 
+       stage1_reg[2] ( IN SI ) ( OUT Q ) 
+       stage1_reg[3] ( IN SI ) ( OUT Q ) 
+    + STOP PIN scan_out
+;
+
+END SCANCHAINS 
+END DESIGN 
